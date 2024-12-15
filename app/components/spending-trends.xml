@@ -1,0 +1,10 @@
+<GridLayout xmlns="http://schemas.nativescript.org/tns.xsd" rows="auto, *">
+    <Label text="Spending Trends" class="h2 p-2"/>
+    <RadCartesianChart row="1">
+        <LineSeries items="{{ spendingTrends }}"
+                    categoryProperty="date"
+                    valueProperty="amount"/>
+        <DateTimeCategoricalAxis/>
+        <LinearAxis/>
+    </RadCartesianChart>
+</GridLayout>

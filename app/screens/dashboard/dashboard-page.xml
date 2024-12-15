@@ -1,0 +1,23 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Dashboard"/>
+    <ScrollView>
+        <StackLayout class="p-4">
+            <GridLayout rows="auto, auto" columns="*, auto" class="bg-green-100 p-4 rounded-lg">
+                <Label text="Total Balance" row="0" col="0" class="text-lg"/>
+                <Label text="{{ totalBalance }}" row="1" col="0" class="text-3xl font-bold"/>
+                <Button text="+" row="0" rowSpan="2" col="1" tap="{{ onAddTransaction }}" 
+                        class="bg-green-500 text-white text-lg rounded-full w-12 h-12"/>
+            </GridLayout>
+
+            <GridLayout rows="auto, auto" columns="*, *" class="mt-4">
+                <Label text="Income" row="0" col="0" class="text-center"/>
+                <Label text="Expenses" row="0" col="1" class="text-center"/>
+                <Label text="{{ monthlyIncome }}" row="1" col="0" class="text-center text-green-600"/>
+                <Label text="{{ monthlyExpenses }}" row="1" col="1" class="text-center text-red-600"/>
+            </GridLayout>
+
+            <include src="~/components/transaction-list"/>
+            <include src="~/components/budget-chart"/>
+        </StackLayout>
+    </ScrollView>
+</Page>

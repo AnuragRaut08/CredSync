@@ -1,0 +1,12 @@
+<StackLayout xmlns="http://schemas.nativescript.org/tns.xsd">
+    <ListView items="{{ transactions }}" height="300" class="list-group">
+        <ListView.itemTemplate>
+            <GridLayout columns="*, auto" rows="auto, auto" class="list-group-item p-2">
+                <Label text="{{ description }}" row="0" col="0" class="font-semibold"/>
+                <Label text="{{ formattedAmount }}" row="0" col="1" class="text-right"/>
+                <Label text="{{ formattedDate }}" row="1" col="0" class="text-sm text-gray-500"/>
+                <Label text="{{ category }}" row="1" col="1" class="text-sm text-right text-gray-500"/>
+            </GridLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</StackLayout>

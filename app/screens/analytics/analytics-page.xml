@@ -1,0 +1,21 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Analytics"/>
+    <ScrollView>
+        <StackLayout class="p-4">
+            <include src="~/components/spending-trends"/>
+            
+            <Label text="Spending by Category" class="h2 mt-4"/>
+            <include src="~/components/budget-chart"/>
+            
+            <Label text="Insights" class="h2 mt-4"/>
+            <ListView items="{{ insights }}" class="list-group">
+                <ListView.itemTemplate>
+                    <StackLayout class="list-group-item p-2">
+                        <Label text="{{ title }}" class="font-semibold"/>
+                        <Label text="{{ description }}" textWrap="true" class="text-gray-600"/>
+                    </StackLayout>
+                </ListView.itemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</Page>

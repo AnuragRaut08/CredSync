@@ -1,0 +1,12 @@
+<GridLayout xmlns="http://schemas.nativescript.org/tns.xsd" rows="auto, *">
+    <Label text="Budget Overview" class="h2 p-2"/>
+    <RadPieChart row="1">
+        <PieSeries items="{{ budgetData }}" 
+                   valueProperty="amount" 
+                   legendLabel="category"
+                   selectionMode="None"/>
+        <RadLegend position="Right" 
+                   enableSelection="false"
+                   title="Categories"/>
+    </RadPieChart>
+</GridLayout>

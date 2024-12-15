@@ -1,0 +1,38 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="CredSync" icon="" />
+    
+    <TabView selectedTabTextColor="#4CAF50">
+        <TabView.items>
+            <TabViewItem title="Dashboard">
+                <TabViewItem.view>
+                    <StackLayout class="p-4">
+                        <Label text="Total Balance" class="text-lg text-gray-600" />
+                        <Label text="{{ totalBalance }}" class="text-3xl font-bold text-green-600" />
+                        
+                        <Button text="Add Transaction" tap="{{ onAddTransaction }}" class="bg-green-500 text-white p-4 rounded-lg mt-4" />
+                        
+                        <Label text="Recent Transactions" class="text-xl mt-4 mb-2" />
+                        <ListView items="{{ transactions }}" height="300">
+                            <ListView.itemTemplate>
+                                <StackLayout class="p-2 border-b border-gray-200">
+                                    <Label text="{{ description }}" class="font-semibold" />
+                                    <Label text="{{ amount }}" class="text-green-600" />
+                                </StackLayout>
+                            </ListView.itemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </TabViewItem.view>
+            </TabViewItem>
+            
+            <TabViewItem title="Analytics">
+                <TabViewItem.view>
+                    <StackLayout class="p-4">
+                        <Label text="Spending Analytics" class="text-2xl mb-4" />
+                        <Label text="Monthly Overview" class="text-lg" />
+                        <!-- Add charts here in future updates -->
+                    </StackLayout>
+                </TabViewItem.view>
+            </TabViewItem>
+        </TabView.items>
+    </TabView>
+</Page>
