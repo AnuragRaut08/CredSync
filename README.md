@@ -24,7 +24,8 @@ CredSync is a comprehensive cross-platform mobile application that merges financ
 * **Visualization:** Matplotlib, Seaborn, Flutter Charts
 
 ## Architecture
-![image](https://github.com/user-attachments/assets/4915bc21-d71e-4e28-ac66-202e1033a992)
+![image](https://github.com/user-attachments/assets/b1e744d9-79d4-4792-9eb7-13be36970b1a)
+
 
 
 ## 🛠 Installation
