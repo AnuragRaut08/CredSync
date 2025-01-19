@@ -2,7 +2,7 @@
 
 ## Overview
 
-CredSync is a comprehensive cross-platform mobile application that merges financial management with advanced analytics. Developed using Flutter and Dart, and powered by Firebase, it provides users with personalized tools for budgeting, expense tracking, and investment insights.
+CredSync is a comprehensive cross-platform mobile application that merges financial management with advanced analytics. Developed it using Flutter and Dart, and powered by Firebase, it provides users with personalized tools for budgeting, expense tracking, and investment insights.
 
 ## 🌟 Features
 
