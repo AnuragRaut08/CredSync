@@ -79,7 +79,7 @@ LinkedIn: Anurag Raut
 
 🌈 Project Highlights
 
-Advanced machine learning for financial insights
+Advanced machine learning for providing financial insights
 Cross-platform mobile application
 Real-time data synchronization
 Personalized financial management tools
