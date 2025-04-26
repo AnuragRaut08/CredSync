@@ -45,7 +45,7 @@ Install Flutter dependencies:
 
 bashCopyflutter pub get
 
-Set up Firebase:
+Set up for Firebase:
 
 Add google-services.json (Android) or GoogleService-Info.plist (iOS) to the project
 
